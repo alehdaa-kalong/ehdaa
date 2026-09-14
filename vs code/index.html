@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Explorer: Midterm Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Header & Navigation -->
+    <header>
+        <figure class="logo-area" aria-label="Palestine Explorer Logo">
+            <!-- Inline SVG Logo -->
+            <svg height="40" width="40" viewBox="0 0 100 100" role="img" aria-label="Explorer Flag Logo">
+                <rect width="100" height="100" fill="#000000" />
+                <path d="M0,0 L100,50 L0,100 Z" fill="#d32f2f" />
+            </svg>
+            <figcaption class="logo-text">Palestine Explorer</figcaption>
+        </figure>
+
+        <!-- Checkbox for pure CSS mobile hamburger menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <nav>
+            <a href="#top">Top</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#governorates">Palestinian Governorates</a>
+            <a href="#contact">Contact</a>
+            <a href="#bottom">Bottom</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction" class="intro-section">
+            <article>
+                <h1>Welcome to Palestine Explorer</h1>
+                <p>Palestine is a land rich in history, culture, and heritage, bridging Asia and Africa. From ancient sacred sites to vibrant coastal cities, explore the diverse history and enduring spirit of its people and regions.</p>
+                <a href="#governorates" class="cta-btn">Explore Governorates</a>
+            </article>
+        </section>
+
+        <!-- Palestinian Governorates Cards Section -->
+        <section id="governorates" class="governorates-section">
+            <h2>Palestinian Governorates</h2>
+            
+            <section class="card-container">
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=1" alt="Historic view of Al-Quds city">
+                    <h3>Quds</h3>
+                    <p>The spiritual and historical heart, home to ancient holy sites and centuries of rich heritage.</p>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Old stone buildings in Khaleel">
+                    <h3>Khaleel</h3>
+                    <p>Famous for its ancient Old City, traditional markets, and historic glass and pottery industries.</p>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Coastal view of Yafa">
+                    <h3>Yafa</h3>
+                    <p>A historic port city known for its stunning architecture, orange groves, and coastal beauty.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Street scene in Khan Younus">
+                    <h3>Khan Younus</h3>
+                    <p>A bustling southern city rich in agricultural history and historical Mamluk-era architecture.</p>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=5" alt="Border area landscape of Rafah">
+                    <h3>Rafah</h3>
+                    <p>A vital southern gateway featuring deep historical roots and resilient local communities.</p>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card">
+                    <img src="https://picsum.photos/300/200?random=6" alt="Seaside view of Gaza">
+                    <h3>Gaza</h3>
+                    <p>A historic coastal center of trade, culture, and unwavering coastal resilience.</p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email Address (@ftu.ac.th):</label>
+                <input type="email" id="email" name="email" pattern=".+@ftu\.ac\.th" title="Must be a @ftu.ac.th email address" required>
+
+                <label for="secret">Secret Word (Min 8 chars, Upper, Lower, Number, Special):</label>
+                <input type="password" id="secret" name="secret" minlength="8" 
+                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" 
+                       title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="bottom">
+        <p>&copy; 2026 Palestine Explorer. All rights reserved.</p>
+        <p class="ehdaa">Ehdaa Kalong</p>
+        <a href="#top" class="top-link">Return to Top</a>
+    </footer>
+
+</body>
+</html>
